@@ -151,7 +151,7 @@ objects:
           - name: MYSQL_HOST
             value: mariadb
           - name: MYSQL_PASS
-            value: ${MYSQL_PASS}
+            value: ${MYSQL_PASSWORD}
           - name: MYSQL_ROOT_PASS
             value: ${MYSQL_ROOT_PASSWORD}
           - name: MYSQL_USER
@@ -285,5 +285,3 @@ parameters:
   displayName: OpenEMR admin user password.
   name: OE_PASS
   required: true
-
-    ######  oc adm policy add-scc-to-user anyuid -z openemr
